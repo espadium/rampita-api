@@ -2,5 +2,5 @@ class API < Grape::API
   prefix 'api'
   format :json
 
-  mount RampitaAPI
+  mount Rampita
 end

@@ -35,6 +35,8 @@ group :test do
   gem 'api_matchers'
 end
 
+gem "accesible_uy_api_gem", :path => "/Users/oscar/projects/Ponies/accesible_uy_api_gem/"
+
 # Code analysis tools
 
 gem 'reek'
