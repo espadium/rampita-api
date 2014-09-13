@@ -35,7 +35,7 @@ group :test do
   gem 'api_matchers'
 end
 
-gem "accesible_uy_api_gem", :path => "/Users/oscar/projects/Ponies/accesible_uy_api_gem/"
+gem "accesible_uy_api_gem", :git => "https://github.com/espadium/accesible_uy_api_gem.git"
 
 # Code analysis tools
 

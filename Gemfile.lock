@@ -1,5 +1,6 @@
-PATH
-  remote: /Users/oscar/projects/Ponies/accesible_uy_api_gem
+GIT
+  remote: https://github.com/espadium/accesible_uy_api_gem.git
+  revision: 838afbc8ad006d5dcdfd724c9ad8f6d33e940dba
   specs:
     accesible_uy_api_gem (0.0.0)
 
