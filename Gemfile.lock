@@ -1,4 +1,14 @@
 GIT
+  remote: git://github.com/rails/sass-rails.git
+  revision: 423178729e7b84addcee78b33891644b1fc1705b
+  specs:
+    sass-rails (5.0.0.beta1)
+      railties (>= 4.0.0, < 5.0)
+      sass (~> 3.2)
+      sprockets (~> 2.12)
+      sprockets-rails (>= 2.0, < 4.0)
+
+GIT
   remote: https://github.com/espadium/accesible_uy_api_gem.git
   revision: 838afbc8ad006d5dcdfd724c9ad8f6d33e940dba
   specs:
@@ -47,11 +57,26 @@ GEM
       ice_nine (~> 0.11.0)
       thread_safe (~> 0.3, >= 0.3.1)
     builder (3.2.2)
+    chunky_png (1.3.1)
     code_analyzer (0.4.5)
       sexp_processor
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
     colored (1.2)
+    compass (1.0.1)
+      chunky_png (~> 1.2)
+      compass-core (~> 1.0.1)
+      compass-import-once (~> 1.0.5)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+      sass (>= 3.3.13, < 3.5)
+    compass-core (1.0.1)
+      multi_json (~> 1.0)
+      sass (>= 3.3.0, < 3.5)
+    compass-import-once (1.0.5)
+      sass (>= 3.2, < 3.5)
+    compass-rails (2.0.0)
+      compass (>= 0.12.2)
     daemons (1.1.9)
     database_cleaner (1.3.0)
     descendants_tracker (0.0.4)
@@ -63,6 +88,7 @@ GEM
     equalizer (0.0.9)
     erubis (2.7.0)
     eventmachine (1.0.3)
+    execjs (2.2.1)
     factory_girl (4.4.0)
       activesupport (>= 3.0.0)
     factory_girl_rails (4.4.1)
@@ -70,6 +96,7 @@ GEM
       railties (>= 3.0.0)
     faker (1.4.3)
       i18n (~> 0.5)
+    ffi (1.9.3)
     grape (0.9.0)
       activesupport
       builder
@@ -83,6 +110,9 @@ GEM
     grape-entity (0.4.4)
       activesupport
       multi_json (>= 1.3.2)
+    grape-swagger (0.8.0)
+      grape
+      grape-entity
     hashie (3.3.1)
     hike (1.2.3)
     i18n (0.6.11)
@@ -146,6 +176,9 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rainbow (2.0.0)
     rake (10.3.2)
+    rb-fsevent (0.9.4)
+    rb-inotify (0.9.5)
+      ffi (>= 0.5.0)
     rdoc (4.1.2)
       json (~> 1.4)
     reek (1.3.8)
@@ -186,6 +219,7 @@ GEM
       sexp_processor (~> 4.0)
     ruby_parser (3.6.2)
       sexp_processor (~> 4.1)
+    sass (3.4.4)
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
@@ -218,6 +252,9 @@ GEM
       polyglot (>= 0.3.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    uglifier (2.5.3)
+      execjs (>= 0.3.0)
+      json (>= 1.8.0)
     virtus (1.0.3)
       axiom-types (~> 0.1)
       coercible (~> 1.0)
@@ -230,12 +267,14 @@ PLATFORMS
 DEPENDENCIES
   accesible_uy_api_gem!
   api_matchers
+  compass-rails
   database_cleaner
   dotenv
   factory_girl_rails
   faker
   grape
   grape-entity
+  grape-swagger
   jbuilder (~> 1.2)
   pg
   rails (= 4.1.1)
@@ -244,7 +283,9 @@ DEPENDENCIES
   reek
   rspec-rails
   rubocop
+  sass-rails!
   sdoc
   shoulda-matchers
   spork-rails
   thin
+  uglifier

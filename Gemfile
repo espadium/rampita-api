@@ -15,6 +15,7 @@ gem 'jbuilder', '~> 1.2'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+  gem 'grape-swagger'
 end
 
 group :development do
@@ -35,8 +36,6 @@ group :test do
   gem 'api_matchers'
 end
 
-gem "accesible_uy_api_gem", :git => "https://github.com/espadium/accesible_uy_api_gem.git"
-
 # Code analysis tools
 
 gem 'reek'
@@ -44,6 +43,13 @@ gem 'rails_best_practices'
 gem 'rubocop'
 
 gem 'rails_12factor', group: :production
+
+# Geolocation
+gem "accesible_uy_api_gem", :git => "https://github.com/espadium/accesible_uy_api_gem.git"
+
+gem 'uglifier'
+gem 'sass-rails', github: 'rails/sass-rails'
+gem 'compass-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
