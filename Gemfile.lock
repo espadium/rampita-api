@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/espadium/accesible_uy_api_gem.git
-  revision: 838afbc8ad006d5dcdfd724c9ad8f6d33e940dba
+  revision: dd387a6cf0a540e5914abd976f28338f3479665a
   specs:
     accesible_uy_api_gem (0.0.0)
 
